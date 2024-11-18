@@ -100,9 +100,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact
 
-- Website: [sahayog.com](https://sahayog.com)
-- Email: support@sahayog.com
-- Phone: +91 98765 43210
+- Website: [sahayog.com](https://sahayog-flame.vercel.app/)
+- Email:
+- Phone:
 
 ## 🙏 Acknowledgments
 
