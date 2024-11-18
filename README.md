@@ -30,7 +30,7 @@ A modern, responsive landing page for Sahayog - your partner in healthy, conveni
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Axhigowda/Sahayog.git
+git clone https://github.com/username/Sahayog.git
 ```
 
 2. Navigate to the project directory:
@@ -100,7 +100,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact
 
-- Website: [sahayog.com](https://sahayog-flame.vercel.app/)
+- Website: [sahayog.com](https://sahayog-ten.vercel.app/)
 - Email:
 - Phone:
 
