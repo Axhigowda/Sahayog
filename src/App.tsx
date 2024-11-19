@@ -29,7 +29,7 @@ function App() {
     {
       name: "Classic Butter Chicken",
       description: "Rich, creamy, and perfectly spiced",
-      price: "₹199",
+      price: "₹249",
       image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&q=80&w=400&h=300",
       serves: 2
     },
