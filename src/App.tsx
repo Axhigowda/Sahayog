@@ -233,9 +233,13 @@ function App() {
               <button className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all">
                 Download App
               </button>
-              <button id="meal-kits" className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-all">
+              <button
+                  className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-all"
+                  onClick={() => document.getElementById("meal-kits").scrollIntoView({behavior: "smooth"})}
+              >
                 Browse Meals
               </button>
+
             </div>
           </div>
         </section>
