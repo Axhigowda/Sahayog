@@ -59,6 +59,7 @@ function App() {
               <button className="text-emerald-600 font-semibold px-4 py-2 rounded-full border border-emerald-600 hover:bg-emerald-600 hover:text-white transition-all">
                 More
               </button>
+              {/* Dropdown Menu */}
               <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-4 transition-all duration-300">
                 <a
                     href="#about"
@@ -114,19 +115,170 @@ function App() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 px-4 bg-gray-50">
-          {/* Content */}
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-16">Why Choose Sahayog?</h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <div className="flex gap-4 items-start">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <Leaf className="w-6 h-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Fresh, Local Ingredients</h3>
+                    <p className="text-gray-600">We source directly from local farmers to ensure the highest quality produce.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <Clock className="w-6 h-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Time-Saving Solutions</h3>
+                    <p className="text-gray-600">Pre-measured ingredients and easy recipes save you precious time.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <Heart className="w-6 h-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Healthy Living</h3>
+                    <p className="text-gray-600">Nutritious recipes designed by expert chefs and nutritionists.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <img
+                    src="https://images.unsplash.com/photo-1516824711718-9c1e683412ac?auto=format&fit=crop&q=80&w=800"
+                    alt="Cooking with Sahayog"
+                    className="rounded-lg shadow-xl"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
+                  <p className="text-emerald-600 font-semibold">4.9/5</p>
+                  <p className="text-sm text-gray-600">Customer Rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Meal Kits Section */}
-        <section id="meal-kits" className="py-20 px-4">
-          {/* Content */}
+        <section className="py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-16">Explore Our Meal Kits</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {mealKits.map((kit, index) => (
+                  <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all">
+                    <img src={kit.image} alt={kit.name} className="w-full h-48 object-cover" />
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold mb-2">{kit.name}</h3>
+                      <p className="text-gray-600 mb-4">{kit.description}</p>
+                      <div className="flex justify-between items-center">
+                        <p className="text-emerald-600 font-bold text-xl">{kit.price}</p>
+                        <button className="bg-emerald-500 text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg-emerald-600">
+                          Order Now <ShoppingBag className="w-4 h-4" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="py-20 px-4 bg-gray-50">
-          {/* Content */}
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            <div className="relative">
+              <div className="bg-white rounded-xl shadow-lg p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <img
+                      src={testimonials[currentTestimonial].image}
+                      alt={testimonials[currentTestimonial].name}
+                      className="w-16 h-16 rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 className="font-semibold">{testimonials[currentTestimonial].name}</h3>
+                    <p className="text-gray-600">{testimonials[currentTestimonial].location}</p>
+                  </div>
+                </div>
+                <p className="text-lg text-gray-700 italic">"{testimonials[currentTestimonial].text}"</p>
+              </div>
+              <div className="flex justify-center mt-8 gap-4">
+                <button
+                    onClick={() => setCurrentTestimonial(prev => prev === 0 ? testimonials.length - 1 : prev - 1)}
+                    className="bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button
+                    onClick={() => setCurrentTestimonial(prev => prev === testimonials.length - 1 ? 0 : prev + 1)}
+                    className="bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                >
+                  <ChevronRightIcon className="w-6 h-6" />
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
+
+        {/* CTA Section */}
+        <section className="py-20 px-4 bg-emerald-600 text-white">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-8">Ready to Start Cooking?</h2>
+            <p className="text-xl mb-8">Join thousands of happy customers cooking delicious meals at home.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all">
+                Download App
+              </button>
+              <button className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-all">
+                Browse Meals
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8">
+              <div>
+                <h3 className="text-white font-bold text-lg mb-4">Sahayog</h3>
+                <p className="text-sm">Making healthy cooking accessible to everyone.</p>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><a href="#" className="hover:text-white">About Us</a></li>
+                  <li><a href="#" className="hover:text-white">How It Works</a></li>
+                  <li><a href="#" className="hover:text-white">FAQs</a></li>
+                  <li><a href="#" className="hover:text-white">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Contact</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>support@sahayog.com</li>
+                  <li>+91 98765 43210</li>
+                  <li>Bangalore, Karanataka</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Follow Us</h4>
+                <div className="flex gap-4">
+                  <a href="#" className="hover:text-white"><Instagram className="w-5 h-5" /></a>
+                  <a href="#" className="hover:text-white"><Facebook className="w-5 h-5" /></a>
+                  <a href="#" className="hover:text-white"><Youtube className="w-5 h-5" /></a>
+                </div>
+              </div>
+            </div>
+            <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
+              <p>&copy; 2024 Sahayog. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
       </div>
   );
 }
