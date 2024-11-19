@@ -52,32 +52,44 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full z-10 flex justify-between items-center px-4 py-4">
-        <h1 className="text-3xl font-bold text-emerald-500">Sahayog</h1>
-        <div className="relative group">
-          <button className="bg-emerald-600 text-white font-semibold px-6 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition-all transform hover:scale-105">
-            More
-          </button>
-          {/* Dropdown Menu */}
-          <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-4 transition-all duration-300">
-            <a
-                href="#about"
-                className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600 rounded-t-lg"
-            >
-              About Us
-            </a>
-            <a
-                href="#meal-kits"
-                className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600"
-            >
-              Meal Kits
-            </a>
-            <a
-                href="#testimonials"
-                className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600 rounded-b-lg"
-            >
-              Testimonials
-            </a>
+      <header className="w-full py-4">
+        <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
+          <h1 className="text-3xl font-bold text-emerald-600">Sahayog</h1>
+          <div className="relative group">
+            <button className="p-2 rounded-md focus:outline-none hover:bg-gray-100 transition-all">
+              {/* Hamburger Icon */}
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-emerald-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+            {/* Dropdown Menu */}
+            <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-4 transition-all duration-300">
+              <a
+                  href="#about"
+                  className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600 rounded-t-lg"
+              >
+                About Us
+              </a>
+              <a
+                  href="#meal-kits"
+                  className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600"
+              >
+                Meal Kits
+              </a>
+              <a
+                  href="#testimonials"
+                  className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600 rounded-b-lg"
+              >
+                Testimonials
+              </a>
+            </div>
           </div>
         </div>
       </header>
