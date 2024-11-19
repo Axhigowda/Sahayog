@@ -29,21 +29,21 @@ function App() {
     {
       name: "Classic Butter Chicken",
       description: "Rich, creamy, and perfectly spiced",
-      price: "₹599",
+      price: "₹199",
       image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&q=80&w=400&h=300",
       serves: 2
     },
     {
       name: "Paneer Tikka Masala",
       description: "Smoky grilled paneer in aromatic gravy",
-      price: "₹499",
+      price: "₹159",
       image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&q=80&w=400&h=300",
       serves: 2
     },
     {
       name: "Buddha Bowl",
       description: "Nutrient-rich vegan delight",
-      price: "₹449",
+      price: "₹129",
       image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=400&h=300",
       serves: 1
     }
