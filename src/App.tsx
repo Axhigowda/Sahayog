@@ -56,26 +56,26 @@ function App() {
           <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <h1 className="text-3xl font-bold text-emerald-500">Sahayog</h1>
             <div className="relative group">
-              <button className="text-emerald-600 font-semibold px-4 py-2 rounded-full border border-emerald-600 hover:bg-emerald-600 hover:text-white transition-all">
+              <button className="text-emerald-500 font-semibold px-4 py-2 rounded-full border border-emerald-600 hover:bg-emerald-600 hover:text-white transition-all">
                 More
               </button>
               {/* Dropdown Menu */}
               <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-4 transition-all duration-300">
                 <a
                     href="#about"
-                    className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600 rounded-t-lg"
+                    className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-500 rounded-t-lg"
                 >
                   About Us
                 </a>
                 <a
                     href="#meal-kits"
-                    className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600"
+                    className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-500"
                 >
                   Meal Kits
                 </a>
                 <a
                     href="#testimonials"
-                    className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600 rounded-b-lg"
+                    className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-500 rounded-b-lg"
                 >
                   Testimonials
                 </a>
