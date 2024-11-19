@@ -54,7 +54,7 @@ function App() {
       {/* Header */}
       <header className="fixed w-full bg-transparent backdrop-blur-md z-10">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center">
-          <h1 className="text-3xl font-bold text-emerald-600">Sahayog</h1>
+          <h1 className="text-4xl font-bold text-emerald-500">Sahayog</h1>
         </div>
       </header>
 
