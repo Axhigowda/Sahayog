@@ -233,7 +233,7 @@ function App() {
               <button className="bg-white text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all">
                 Download App
               </button>
-              <button className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-all">
+              <button id="meal-kits" className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-all">
                 Browse Meals
               </button>
             </div>
