@@ -51,6 +51,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white fixed w-full shadow-md z-10">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center">
+          <h1 className="text-3xl font-bold text-emerald-600">Sahayog</h1>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative h-screen">
         <div className="absolute inset-0">
