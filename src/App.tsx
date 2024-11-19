@@ -52,11 +52,11 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="fixed w-full bg-transparent backdrop-blur-md z-10">
+      <header className="fixed w-full z-10">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-4xl font-bold text-emerald-500">Sahayog</h1>
+          <h1 className="text-3xl font-bold text-emerald-600">Sahayog</h1>
           <div className="relative group">
-            <button className="text-emerald-500 font-semibold px-4 py-2 rounded-full border border-emerald-600 hover:bg-emerald-600 hover:text-white transition-all">
+            <button className="text-emerald-600 font-semibold px-4 py-2 rounded-full hover:bg-emerald-100 transition-all">
               More
             </button>
             {/* Dropdown Menu */}
