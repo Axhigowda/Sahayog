@@ -54,7 +54,7 @@ function App() {
         {/* Header */}
         <header className="fixed w-full bg-transparent backdrop-blur-md z-10">
           <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-emerald-600">Sahayog</h1>
+            <h1 className="text-3xl font-bold text-emerald-500">Sahayog</h1>
             <div className="relative group">
               <button className="text-emerald-600 font-semibold px-4 py-2 rounded-full border border-emerald-600 hover:bg-emerald-600 hover:text-white transition-all">
                 More
@@ -115,7 +115,7 @@ function App() {
         </section>
 
         {/* About Section */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section id="about" className="py-20 px-4 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16">Why Choose Sahayog?</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -164,7 +164,7 @@ function App() {
         </section>
 
         {/* Meal Kits Section */}
-        <section className="py-20 px-4">
+        <section id="meal-kits" className="py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16">Explore Our Meal Kits</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -188,7 +188,7 @@ function App() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section id="testimonials" className="py-20 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
             <div className="relative">
