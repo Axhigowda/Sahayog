@@ -103,7 +103,7 @@ function App() {
                 Fresh, pre-measured ingredients with easy-to-follow recipes—delivered right to your doorstep.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-all transform hover:scale-105">
+                <button onClick={() => document.getElementById("meal-kits").scrollIntoView({behavior: "smooth"})} className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-all transform hover:scale-105">
                   Explore Meal Kits <ChevronRight className="w-5 h-5" />
                 </button>
                 <button className="bg-white text-gray-900 px-8 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100 transition-all">
