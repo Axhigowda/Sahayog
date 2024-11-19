@@ -52,11 +52,20 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="w-full py-4">
+      <header className="w-full py-4 bg-transparent backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-emerald-600">Sahayog</h1>
+          <h1 className="text-4xl font-bold text-emerald-500">Sahayog</h1>
           <div className="relative group">
-            <button className="p-2 rounded-md focus:outline-none hover:bg-gray-100 transition-all">
+            <button
+                className="p-2 rounded-md focus:outline-none hover:bg-gray-200 transition-all"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const dropdown = e.currentTarget.nextElementSibling;
+                  if (dropdown) {
+                    dropdown.classList.toggle('hidden');
+                  }
+                }}
+            >
               {/* Hamburger Icon */}
               <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +79,10 @@ function App() {
               </svg>
             </button>
             {/* Dropdown Menu */}
-            <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-4 transition-all duration-300">
+            <div
+                className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden"
+                onClick={(e) => e.stopPropagation()}
+            >
               <a
                   href="#about"
                   className="block px-4 py-2 text-gray-700 hover:bg-emerald-100 hover:text-emerald-600 rounded-t-lg"
